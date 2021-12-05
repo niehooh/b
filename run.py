@@ -52,8 +52,8 @@ def process(message,username,chatid):
 		try:
 			(balance, pending_balance) = returnBal(username)
 			sendMsg("@"+username+" Balance : "+balance+ "Doge ("+pending_balance+" Doge Pending)",chatid)
-		except:
-			sendMsg("@"+username+" you are not registered yet. use /register to register.",chatid)
+		
+			
 	elif "/tip" in message[0]:
 		try:
 			person = message[1].replace('@','')
