@@ -54,7 +54,7 @@ def process(message,username,chatid):
 			sendMsg("@"+username+" Balance : "+balance+ "Doge ("+pending_balance+" Doge Pending)",chatid)
 		
 			except:
-
+pass
 	elif "/tip" in message[0]:
 		try:
 			person = message[1].replace('@','')
